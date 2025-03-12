@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Nível de Herói</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e2e;
+    color: white;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0; /* Remove margens padrão */
+}
+
+.container {
+    padding: 20px;
+    background: #2a2a3a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra para destaque */
+}
+        input {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* Cores dos níveis */
+        .ferro { background-color: #A8A8A8; }
+        .bronze { background-color: #CD7F32; }
+        .prata { background-color: #C0C0C0; }
+        .ouro { background-color: #FFD700; color: black; }
+        .platina { background-color: #E5E4E2; color: black; }
+        .ascendente { background-color: #008000; }
+        .imortal { background-color: #800080; }
+        .radiante { background-color: #FF4500; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Classificador de Nível de Herói</h1>
+        <input type="text" id="nomeHeroi" placeholder="Nome do Herói">
+        <input type="number" id="xpHeroi" placeholder="Experiência (XP)">
+        <button onclick="classificarHeroi()">Classificar</button>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
